@@ -1,0 +1,49 @@
+{
+  "name": "r-jee/laravel-url-rewrite",
+  "description": "Easy URL rewrite in your Laravel application",
+  "keywords": [
+    "url",
+    "rewrite",
+    "laravel"
+  ],
+  "homepage": "https://github.com/r-jee/laravel-url-rewrite",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "R-jee",
+      "email": "rjee4631@gmail.com",
+      "homepage": "https://ide.ma"
+    }
+  ],
+  "require": {
+    "php": "^7.2 || ^8.0",
+    "laravel/framework": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "orchestra/testbench": "~3.8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RuthgerIdema\\UrlRewrite\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RuthgerIdema\\UrlRewrite\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RuthgerIdema\\UrlRewrite\\ServiceProvider"
+      ]
+    }
+  }
+}
